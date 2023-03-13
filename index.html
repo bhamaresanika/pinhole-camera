@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pinhole Camera</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="mat-typography">
+  <app-root>
+    <html>
+
+    <head></head>
+    <div class="btn-group">
+      <canvas id='c'></canvas>
+
+      <div class="container">
+        <input type="range" min="0.25" max="5" value="0.25" step="0.25" onchange="myFunction(this.value)" id="dp">
+        <p id="demo"></p>
+
+        <button onclick="DrawRayBoundry()" class="btn">Ray Diagram</button>
+        <button onclick="FillRayBoundry()" class="btn">Fill Diagram</button>
+        <button onclick="DrawImage()" class="btn">Trace Image</button>
+
+      </div>
+
+      <h4>Adjust Aperture</h4>
+
+    </div>
+
+    </html>
+  </app-root>
+
+</body>
+
+<script src='lib/fabric.min.js'></script>
+<script src='index3.js'></script>
+
+</html>

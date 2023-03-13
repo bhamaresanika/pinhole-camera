@@ -1,0 +1,39 @@
+html {
+    display: flex;
+    justify-content: center;
+} 
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    margin: 10px;
+    font-family: Arial, sans-serif;
+    padding: 1em; 
+    width:fit-content;
+}
+
+.btn-group {
+
+    background-color: #535053;
+    border: 1px solid rgb(133, 110, 9);
+    color: white;
+    padding: 5px 5px;
+    display: inline-block;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+}
+button {
+    margin-top: 10px;
+    cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+    html {
+        height: 90vh;
+        width:fit-content;
+    }
+  } 
